@@ -29,20 +29,20 @@
                         <h3>License?</h3>
                     </div>
                     <div class="fragment fade-in-then-out">
-                        <h2>Forgotten secrets</h2>
-                        <h3>Cleaning a repo with history</h3>
-                    </div>
-                    <div class="fragment fade-in-then-out">
                         <h2>Depending on libraries</h2> 
                         <h3>a potential legal issue</h3>
                     </div>
                     <div class="fragment fade-in-then-out">
-                        <h2>Invite the world!</h2> 
-                        <h3>How to contribute</h3>
+                        <h2>Forgotten secrets</h2>
+                        <h3>Cleaning a repo with history</h3>
                     </div>
                     <div class="fragment fade-in-then-out">
-                        <h2>Spring cleaning</h2>
-                        <h3>Leave out the company stuff</h3>
+                        <h2>Legacy independency</h2>
+                        <h3>Separate the company stuff</h3>
+                    </div>
+                    <div class="fragment fade-in-then-out">
+                        <h2>Invite the world!</h2> 
+                        <h3>How to contribute</h3>
                     </div>
                     <div class="fragment fade-in-then-out">
                         <h2>Dress for success</h2>
@@ -52,6 +52,14 @@
             <section>
                 <section>    
                     <h1>What to consider choosing a license</h1>
+                    <div class="container">
+                        <div class="box">
+                            Motivation for Open Source
+                        </div>
+                        <div class="box">
+                            Type of licenses
+                        </div>
+                    </div>
                 </section>
                 <section>
                     <h1>The motivation</h1>
@@ -351,6 +359,30 @@
                         <div style="margin: 0;font-size: 1rem;">To Long; Didn´t Read</div>
                     </div>
                 </section>
+            </section>
+            <section>
+                <h1>Check library dependencies</h1>
+                <ul class="air-list">
+                    <li class="fragment fade-in-then-out">Install CLI tool<em> > npm <a href="https://www.npmjs.com/package/license-compatibility-checker">license-compatibility-checker</a></em></li>
+                    <li class="fragment fade-in-then-out">Run <em>license-compatibility-checker</em><img src="image-license-check.png"></li>
+                </ul>
+            </section>
+            <section>
+                <h1>Remove repo history</h1>
+                <p>To be 100% sure not to reveal company secrets</p>
+                <ul class="air-list">
+                    <li class="fragment fade-in-then-out">It is not sufficient to wipe committs</li>
+                    <li class="fragment fade-in-then-out">since the pull requests will still contain the history</li>
+                    <li class="fragment fade-in-then-out">Clone and copy into a new repo</li>
+                    <li class="fragment fade-in-then-out">Remember to setup actions, move issues, ect...</li>
+                </ul>
+            </section>
+            <section>
+                <h1>Separate company legacy content from OS repo</h1>
+                <ul class="air-list">
+                    <li>Move company spesific setup into a internal company repo</li>
+                    <li>Ensure OS code still executes without dependencies to company legacy</li>
+                </ul>
             </section>
 
             <section data-transition="zoom">
