@@ -24,34 +24,35 @@
             </section>
             <section>
                 <h1>Topics</h1>
-                    <div class="fragment fade-in-then-out">
-                        <h2>Oh my G...</h2>
-                        <h3>License?</h3>
-                    </div>
-                    <div class="fragment fade-in-then-out">
-                        <h2>Depending on libraries</h2> 
-                        <h3>a potential legal issue</h3>
-                    </div>
-                    <div class="fragment fade-in-then-out">
-                        <h2>Forgotten secrets</h2>
-                        <h3>Cleaning a repo with history</h3>
-                    </div>
-                    <div class="fragment fade-in-then-out">
-                        <h2>Legacy independency</h2>
-                        <h3>Separate the company stuff</h3>
-                    </div>
-                    <div class="fragment fade-in-then-out">
-                        <h2>Invite the world!</h2> 
-                        <h3>How to contribute</h3>
-                    </div>
-                    <div class="fragment fade-in-then-out">
-                        <h2>Dress for success</h2>
-                        <h3>Its all about the community...</h3>
-                    </div>
+                <div class="box-list fragment fade-in">
+                    <h3>Oh my G...</h3>
+                    <p>License?</p>
+                </div>
+                <div class="box-list fragment fade-in">
+                    <h3>Library dependencies</h3> 
+                    <p>A potential legal issue?</p>
+                </div>
+                <div class="box-list fragment fade-in">
+                    <h3>Commits and pull requests</h2>
+                    <p>Repo of forgotten secrets?</p>
+                </div>    
+                <div class="box-list fragment fade-in">
+                    <h3>Legacy dependencies</h3>
+                    <p>Separate out the company stuff</p>
+                </div>
+                <div class="box-list fragment fade-in">
+                        <h3>Invite the world!</h2> 
+                        <p>How to contribute</p>
+                </div>
+                <div class="box-list fragment fade-in">
+                    <h3>Prepare for success</h3>
+                    <p>Its all about the community...</p>
+                </div>
             </section>
             <section>
-                <section>    
-                    <h1>What to consider choosing a license</h1>
+                <section>
+                    <h1>Choosing license</h1>    
+                    <h2>What to consider</h1>
                     <div class="container">
                         <div class="box">
                             Motivation for Open Source
@@ -62,27 +63,23 @@
                     </div>
                 </section>
                 <section>
-                    <h1>The motivation</h1>
-                    <div class="fragment fade-in-then-out">
-                        <h2>Internal push</h2>
-                        <h3>Organisational requirement</h3>
+                    <h2>The motivation</h2>
+                    <div class="box-list fragment fade-in">
+                        <h3>Internal push</h3>
+                        <h4>Organisational requirement</h4>
                     </div>
-                    <div class="fragment fade-in-then-out">
-                        <h2>To big to solve alone</h2>
-                        <h3>Industry collaboration</h3>
+                    <div class="box-list fragment fade-in">
+                        <h3>To big to solve alone</h3>
+                        <h4>Industry collaboration</h4>
                     </div>
-                    <div class="fragment fade-in-then-out">
-                        <h2>Give away</h2>
-                        <h3>Sharing will benefit us</h3>
+                    <div class="box-list fragment fade-in">
+                        <h3>Give away</h3>
+                        <h4>Sharing will benefit us</h4>
                     </div>
-                   
-                    <div class="fragment fade-in-then-out">
-                        <h2>Avoid lookout</h2>
-                        <h3>Share first to protect yourself</h3>
+                    <div class="box-list fragment fade-in">
+                        <h3>Avoid lookout</h3>
+                        <h4>Share first to protect yourself</h4>
                     </div>
-                    
-
-                </section>
                 </section>
                 <section>
                     <h2>License A-B-C</h2>
@@ -242,7 +239,7 @@
                 </div>
                 </section>
                 <section>
-                    <h1>Top 3 licenses</h1>
+                    <h2>Top 3 most used licenses</h2>
                     <div class="container">
                         <div class="box" style="background-color: green;">Can</div>
                         <div class="box" style="background-color: darkred;">Cannot</div>
@@ -362,27 +359,54 @@
             </section>
             <section>
                 <h1>Check library dependencies</h1>
-                <ul class="air-list">
-                    <li class="fragment fade-in-then-out">Install CLI tool<em> > npm <a href="https://www.npmjs.com/package/license-compatibility-checker">license-compatibility-checker</a></em></li>
-                    <li class="fragment fade-in-then-out">Run <em>license-compatibility-checker</em><img src="image-license-check.png"></li>
-                </ul>
+                    <div class="box-list fragment fade-in">Install CLI tool<em> > npm <a href="https://www.npmjs.com/package/license-compatibility-checker">license-compatibility-checker</a></em></div>
+                    <div class="box-list fragment fade-in">Run <em>license-compatibility-checker</em><img src="image-license-check.png" style="width: 85%;"></div>
             </section>
             <section>
-                <h1>Remove repo history</h1>
+                <h1>Clean-up repo history</h1>
                 <p>To be 100% sure not to reveal company secrets</p>
-                <ul class="air-list">
-                    <li class="fragment fade-in-then-out">It is not sufficient to wipe committs</li>
-                    <li class="fragment fade-in-then-out">since the pull requests will still contain the history</li>
-                    <li class="fragment fade-in-then-out">Clone and copy into a new repo</li>
-                    <li class="fragment fade-in-then-out">Remember to setup actions, move issues, ect...</li>
-                </ul>
+                <div class="box-list fragment fade-in" style="background-color: var(--heritage-red)">
+                       It is not sufficient to delete commits, since the pull requests will still reveal the history
+                </div>
+                <div class="box-list fragment fade-in">
+                    Rename the "old" repository on github, and create a new (empty) repository
+                </div>
+                <div class="box-list fragment fade-in">   
+                      Clone the "old" repository on local
+                      <div class="code"> > git clone git@github.com:...<`old repo.git`></div>
+                    </div>
+                <div class="box-list fragment fade-in">   
+                    Add remote upstream to new repository
+                    <div class="code"> > git remote add upstream git@github.com:...<`new repo.git`></div>
+                </div>
+                <div class="box-list fragment fade-in">   
+                    Push main branch to upstream
+                    <div class="code"> > git push -u upstream/main</div>
+                </div>
+                <div class="box-list fragment fade-in">
+                    Remember to setup actions, move issues, etc...
+                </div>
             </section>
             <section>
-                <h1>Separate company legacy content from OS repo</h1>
-                <ul class="air-list">
-                    <li>Move company spesific setup into a internal company repo</li>
-                    <li>Ensure OS code still executes without dependencies to company legacy</li>
-                </ul>
+                <h1>Remove Corporate legacy</h1>
+                <div class="box-list fragment fade-in">
+                    Move corporate legacy into a internal company repo
+                </div>
+                <div class="box-list fragment fade-in">   
+                    Ensure OS repo still executes
+                </div>
+            </section>
+            <section>
+                <h1>Contributions</h1>
+               <h2> Make it easy to contribute</h2>
+                <div class="box-list fragment fade-in">Document how install and run program , and how to contribute in a markdown file</div>
+                <div class="box-list fragment fade-in">Create templates for issues and pull requests</div>
+                <div class="box-list fragment fade-in">Create issues list, use labels ex. "good first issue"</div>
+            </section>
+            <section>
+                <h1>Community</h1>
+                <h2>xxxx</h2>
+                <div class="box-list fragment fade-in">xxxxx</div>
             </section>
 
             <section data-transition="zoom">
