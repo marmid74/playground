@@ -25,41 +25,41 @@
             <section>
                 <h1>Topics</h1>
                 <div class="box-list fragment fade-in">
-                    <h3>Oh my G...</h3>
-                    <p>License?</p>
+                    <h3>License</h3>
+                    <div class="sub-list">Why & what</div>
                 </div>
                 <div class="box-list fragment fade-in">
                     <h3>Library dependencies</h3> 
-                    <p>A potential legal issue?</p>
+                    <div class="sub-list">A potential legal issue?</div>
                 </div>
                 <div class="box-list fragment fade-in">
                     <h3>Commits and pull requests</h2>
-                    <p>Repo of forgotten secrets?</p>
+                    <div class="sub-list">Repo of forgotten secrets?</div>
                 </div>    
                 <div class="box-list fragment fade-in">
                     <h3>Legacy dependencies</h3>
-                    <p>Separate out the company stuff</p>
+                    <div class="sub-list">Separate out the company stuff</div>
                 </div>
                 <div class="box-list fragment fade-in">
-                        <h3>Invite the world!</h2> 
-                        <p>How to contribute</p>
+                        <h3>How to contribute</h2> 
+                        <div class="sub-list">Invite the world!</div>
                 </div>
                 <div class="box-list fragment fade-in">
-                    <h3>Prepare for success</h3>
-                    <p>Its all about the community...</p>
+                    <h3>Its all about the community</h3>
+                    <div class="sub-list">Prepare for success...</div>
                 </div>
             </section>
             <section>
                 <section>
                     <h1>Choosing license</h1>    
                     <h2>What to consider</h1>
-                    <div class="container">
-                        <div class="box">
-                            Motivation for Open Source
-                        </div>
-                        <div class="box">
-                            Type of licenses
-                        </div>
+                    <div class="box-list fragment fade-in">
+                        <h3>Why</h3>
+                        <div class="sub-list">Motivation for Open Source</div>
+                    </div>
+                    <div class="box-list fragment fade-in">
+                        <h3>What</h3>
+                        <div class="sub-list">Type of licenses</div>
                     </div>
                 </section>
                 <section>
@@ -85,26 +85,26 @@
                     <h2>License A-B-C</h2>
                     <p>Software licenses can be divided in two main categories:</p>
                     <div class="container">
-                        <div class="box">
+                        <div class="box fragment fade-in">
                             <span style="color: yellow;">"Academic" </span>licenses <span style="padding: 0.2rem; background-color: red;">allows</span> derivative works of the software to be used and distributed as part of proprietary programs.
                         </div>
-                        <div class="box">
+                        <div class="box fragment fade-in">
                            <span style="color: yellow;">"Copy left" </span>licenses <span style="padding: 0.1rem; background-color: red;">requires</span> derivative works to be distributed under the same open source license as the original.
                         </div>
                     </div>
                 </section>
                 <section>
                     <h2>Types of licenses</h2>
-                    <table class="reveal">
+                    <table class="reveal mtable">
                         <thead>
                             <tr>
-                                <th style="background-color: lightskyblue;">Copy left</th>
-                                <th style="background-color: #FFE7D6;">License category</th>
-                                <th style="background-color: green;">Public</th>
-                                <th style="background-color: greenyellow;">Permissive</th>
-                                <th style="background-color: yellow;">Weakly Protective</th>
-                                <th style="background-color: orange;">Strongly Protective</th>
-                                <th style="background-color: red;">Network Protective</th>
+                                <th  style="background-color:  lightskyblue;">Copy left</th>
+                                <th  style="background-color: #FFE7D6;">License category</th>
+                                <th  style="background-color: green;">Public</th>
+                                <th  style="background-color: greenyellow;">Permissive</th>
+                                <th  style="background-color: yellow;">Weakly Protective</th>
+                                <th  style="background-color: orange;">Strongly Protective</th>
+                                <th  style="background-color: red;">Network Protective</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -199,12 +199,12 @@
                             - Academic Free License, not GPL compatible, (redundant - replaced by Apache?)
                         </li>
                         <li>
-                            <a href="https://opensource.org/licenses/BSD-3-Clause">3-Clause-BSD</a>
-                            - Berkeley Software Distribution -The BSD license is a simple license that merely requires that all code retain the BSD license notice if redistributed in source code format, or reproduce the notice if redistributed in binary format.
-                        </li>
-                        <li>
                             <a href="https://opensource.org/licenses/MIT">MIT License</a>
                             - Massachusetts Institute of Technology - A short, permissive software license. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.  There are many variations of this license in use.
+                        </li>
+                        <li>
+                            <a href="https://opensource.org/licenses/BSD-3-Clause">3-Clause-BSD</a>
+                            - Berkeley Software Distribution -The BSD license is a simple license that merely requires that all code retain the BSD license notice if redistributed in source code format, or reproduce the notice if redistributed in binary format.
                         </li>
                         <li>
                             <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>
@@ -245,7 +245,7 @@
                         <div class="box" style="background-color: darkred;">Cannot</div>
                         <div class="box" style="background-color: darkblue;">Must</div>
                     </div>
-                    <table>
+                    <table class="reveal mtable">
                         <thead style="background-color: darkgrey;">
                             <tr>
                                 <th class="table-column-left">Rules</th>
@@ -359,8 +359,13 @@
             </section>
             <section>
                 <h1>Check library dependencies</h1>
-                    <div class="box-list fragment fade-in">Install CLI tool<em> > npm <a href="https://www.npmjs.com/package/license-compatibility-checker">license-compatibility-checker</a></em></div>
-                    <div class="box-list fragment fade-in">Run <em>license-compatibility-checker</em><img src="image-license-check.png" style="width: 85%;"></div>
+                    <div class="box-list fragment fade-in">Install <a href="https://www.npmjs.com/package/license-compatibility-checker">license-compatibility-checker</a>
+                        <div class=code> > npm license-compatibility-checker</div>
+                    </div>
+                    <div class="box-list fragment fade-in">Create report
+                        <div class="code"> > license-compatibility-checker</div>
+                        <img src="image-license-check.png" style="width: 85%;">
+                    </div>
             </section>
             <section>
                 <h1>Clean-up repo history</h1>
@@ -372,7 +377,7 @@
                     Rename the "old" repository on github, and create a new (empty) repository
                 </div>
                 <div class="box-list fragment fade-in">   
-                      Clone the "old" repository on local
+                      Clone the "old" repository to local
                       <div class="code"> > git clone git@github.com:...<`old repo.git`></div>
                     </div>
                 <div class="box-list fragment fade-in">   
@@ -405,52 +410,35 @@
             </section>
             <section>
                 <h1>Community</h1>
-                <h2>xxxx</h2>
-                <div class="box-list fragment fade-in">xxxxx</div>
+                <h2>Prepare the ground</h2>
+                <div class="box-list fragment fade-in">
+                    Define roles and responsibilities
+                    <div class="sub-list">management community </div>
+                    <div class="sub-list">maintainers community </div>
+                </div>
+                <div class="box-list fragment fade-in">
+                    Prepare proposal for work processes
+                    <div class="sub-list">backlog userstories prioritisation </div>
+                    <div class="sub-list">backlog items refinement </div>
+                    <div class="sub-list">pullrequest review process </div>
+                </div>
             </section>
-
-            <section data-transition="zoom">
-                <h3>data-transition: zoom</h3>
-            </section>
-
-            <section data-transition="zoom-in fade-out">
-                <h3>data-transition: zoom-in fade-out</h3>
-            </section>
-
             <section>
-                <h3>Default</h3>
+                Q & A
             </section>
-
-            <section data-transition="convex">
-                <h3>data-transition: convex</h3>
-            </section>
-
-            <section data-transition="convex-in concave-out">
-                <h3>data-transition: convex-in concave-out</h3>
-            </section>
-
             <section>
-                <section data-transition="zoom">
-                    <h3>Default</h3>
-                </section>
-                <section data-transition="concave">
-                    <h3>data-transition: concave</h3>
-                </section>
-                <section data-transition="convex-in fade-out">
-                    <h3>data-transition: convex-in fade-out</h3>
-                </section>
-                <section>
-                    <h3>Default</h3>
-                </section>
+                <h2>Thank you for your attention</h2>
+                <div class="grid-box">
+                    <div class="name">Marita Midthaug</div>
+                    <img class="image" src="marita.png" style="height: 120px;">
+                    <div class="title">Lead analyst IT</div>
+                    <div class="organisation">Software Innovation Trondheim</div>
+                    <div class="company">Equinor</div>
+                </div>
+
             </section>
 
-            <section data-transition="none">
-                <h3>data-transition: none</h3>
-            </section>
-
-            <section>
-                <h3>Default</h3>
-            </section>
+            
 
         </div>
 

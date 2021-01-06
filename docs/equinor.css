@@ -131,6 +131,11 @@ body {
   text-align: left;
 }
 
+.sub-list {
+  color: var(--spruce-wood); 
+  font-size: 16px; margin-top: 0.5em 
+}
+
 .reveal table {
   border: var(--moss-green) solid;
   background-color: var(--mist-blue);
@@ -199,7 +204,50 @@ body {
   color: var(--spruce-wood);
 }
 
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "s name image"
+    "s title image"
+    "s organisation image"
+    "s company image";
+}
 
+.name {
+  grid-area: name;
+  font-size: 24px;
+  align-self: end;}
+
+.image {
+  grid-area: image;
+}
+
+.title {
+  grid-area: title;
+  font-size: 14px;
+  align-self: end;
+}
+
+.organisation {
+  grid-area: organisation;
+  font-size: 14px;
+}
+
+.company {
+  grid-area: company;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--energy-red);
+  align-self: center;
+}
+
+.reveal .mtable {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
 /*********************************************
  * IMAGES
  *********************************************/
