@@ -248,9 +248,24 @@ body {
   padding: 0.5rem;
   font-size: 1rem;
 }
+
+.reveal ul {
+  font-size: 12px;
+  text-align: left;
+}
+
+.listbox{
+  margin-left: 20%;
+  margin-right: 10%;
+  
+}
+.photo-credit {
+  font-size: 8px;
+}
 /*********************************************
+                  
  * IMAGES
- *********************************************/
+ ********************************************/
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
@@ -404,3 +419,9 @@ body {
   src: url("fonts/Equinor-LightItalic.woff2") format("woff2"),
        url("fonts/Equinor-LightItalic.woff") format("woff");
 }
+
+
+
+
+
+
