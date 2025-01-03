@@ -1,7 +1,7 @@
 #playground
 ```mermaid
   graph TD;
-      "Find a model"-->B;
+      A-->B;
       A-->C;
       B-->D;
       C-->D;
