@@ -30,7 +30,7 @@
     subgraph 3DPrinter
     direction TB
     I(Add fillament to printer)-->J(Preheat)
-    J-->K(Select fillament type - PLA)
+    J-->K(Select fillament type - PLA or PET)
     K-->L(Print from SD card)
     end
 
