@@ -4,10 +4,10 @@
     subgraph SelectModel
     direction TB
     A(Find a model on Thingiverse.com)
-    C(Optional: Import into Thinkercad.com, and modify it)
+    C(Import into Thinkercad.com, and modify it)
     D(Export  to local filestorage, in format .STL)
     A-->D
-    D-->C
+    D-. optional .->C
     C-->D 
     end
 
