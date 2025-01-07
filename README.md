@@ -4,9 +4,11 @@
     subgraph SelectModel
     direction TB
     A(Find a model on Thingiverse.com)
-    A-->C(Optional: Import into Thinkercad.com, and modify it)
-    C-->D(Export  to local filestorage, in format .STL)
-    A-->D 
+    C(Optional: Import into Thinkercad.com, and modify it)
+    D(Export  to local filestorage, in format .STL)
+    A-->D
+    D-->C
+    C-->D 
     end
 
     subgraph PrusaSlicer
