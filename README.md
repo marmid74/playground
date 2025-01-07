@@ -16,12 +16,14 @@
     E(Import .STL file to PrusaSlicer application)
     E2(Resize, duplicate)
     F(Set the Print quality)
+    F2(Set fillament type PLA or PET)
     G(Slice the model into .gcode fileformat)
     H(Copy .gcode file to SD Card)
 
     E-->F
-    E-->E2
-    F-->G
+    F-->F2
+    E-. optional .->E2
+    F2-->G
     G-->H
     end
 
