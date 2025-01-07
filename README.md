@@ -13,9 +13,16 @@
 
     subgraph PrusaSlicer
     direction TB
-    E(Import .STL file to PrusaSlicer application)-->F(Set the Print quality)
-    F-->G(Slice the model into .gcode fileformat)
-    G-->H(Copy .gcode file to SD Card)
+    E(Import .STL file to PrusaSlicer application)
+    E2(Resize, duplicate)
+    F(Set the Print quality)
+    G(Slice the model into .gcode fileformat)
+    H(Copy .gcode file to SD Card)
+
+    E-->F
+    E-->E2
+    F-->G
+    G-->H
     end
 
     subgraph 3DPrinter
