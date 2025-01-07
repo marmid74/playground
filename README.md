@@ -3,9 +3,9 @@
   flowchart LR;
     subgraph SelectModel
     direction TB
-    A(Find a model on Thingiverse.com)-->B(Download it local filestorage in format .STL)
-    B-->C(Optional: Import it into Thinkercad.com, and adjust it)
-    C-->D(Export  to local filestorage, still as .STL)
+    A(Find a model on Thingiverse.com)
+    A-->C(Optional: Import into Thinkercad.com, and modify it)
+    C-->D(Export  to local filestorage, in format .STL)
     A-->D 
     end
 
